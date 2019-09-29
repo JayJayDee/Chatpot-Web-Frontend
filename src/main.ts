@@ -1,12 +1,14 @@
 import Vue from 'vue';
 import App from './App.vue';
 import store from './store';
-import VueMaterial from 'vue-material';
-
-import 'vue-material/dist/vue-material.min.css';
+import Vuetify from 'vuetify';
 
 Vue.config.productionTip = false;
-Vue.use(VueMaterial);
+Vue.use(Vuetify);
+
+// import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900';
+import '@mdi/font/css/materialdesignicons.css';
+import 'vuetify/dist/vuetify.min.css';
 
 new Vue({
   store,
