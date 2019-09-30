@@ -1,7 +1,22 @@
 <template>
-  <div id="app">
-    <LoginScene />
-  </div>
+  <v-app>
+    <v-navigation-drawer app>
+    </v-navigation-drawer>
+
+    <v-app-bar
+      color="indigo"
+      app>
+    </v-app-bar>
+
+    <v-content>
+      <v-container fluid>
+        <router-view></router-view>
+      </v-container>
+    </v-content>
+
+    <v-footer app>
+    </v-footer>
+  </v-app>
 </template>
 
 <script lang="ts">
