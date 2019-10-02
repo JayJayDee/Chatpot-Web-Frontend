@@ -1,4 +1,4 @@
-# chatpot-webapp
+# chatpot-web-frontend
 
 ## Project setup
 ```

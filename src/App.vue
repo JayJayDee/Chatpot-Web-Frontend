@@ -1,34 +1,26 @@
 <template>
-  <v-app>
-    <v-navigation-drawer app>
-    </v-navigation-drawer>
-
-    <v-app-bar
-      color="indigo"
-      app>
-    </v-app-bar>
-
-    <v-content>
-      <v-container fluid>
-        <router-view></router-view>
-      </v-container>
-    </v-content>
-
-    <v-footer app>
-    </v-footer>
-  </v-app>
+  <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png">
+    <div>
+      <v-btn small color="primary" :click="click">click me</v-btn>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import LoginScene from './components/Login.vue';
+import HelloWorld from './components/HelloWorld.vue';
 
 @Component({
   components: {
-    LoginScene
-  }
+    HelloWorld,
+  },
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  public click() {
+    console.log('clicked!');
+  }
+}
 </script>
 
 <style>
