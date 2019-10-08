@@ -1,18 +1,11 @@
 <template>
   <v-app>
     <v-app-bar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
+      <v-toolbar-title class="headline">
+        <img src="@/assets/chatpot-logo-with-typo-medium.png" class="logo-image">
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn
-        text
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-      </v-btn>
+      <span>About</span>
     </v-app-bar>
 
     <v-content>
@@ -35,3 +28,21 @@ export default Vue.extend({
   }),
 });
 </script>
+
+<style scoped>
+.logo-image {
+  height: 30px;
+  width: 147px;
+}
+</style>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+}
+#app {
+  font-family: 'Roboto', sans-serif;
+}
+</style>
