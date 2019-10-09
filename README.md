@@ -1,4 +1,4 @@
-# chatpot-web-frontend
+# test-vuetify-integration
 
 ## Project setup
 ```

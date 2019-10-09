@@ -1,48 +1,42 @@
 <template>
   <v-app>
     <v-app-bar app>
-      <v-toolbar-title class="headline">
-        <img src="@/assets/chatpot-logo-with-typo-medium.png" class="logo-image">
+      <v-toolbar-title>
+        Chatpot
       </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <span>About</span>
+      <!-- <v-spacer></v-spacer> -->
     </v-app-bar>
 
-    <v-content>
-      <HelloWorld/>
-    </v-content>
+    <v-content></v-content>
   </v-app>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
 
 export default Vue.extend({
-  name: 'App',
-  components: {
-    HelloWorld,
-  },
-  data: () => ({
-    //
-  }),
+  name: 'App'
 });
 </script>
 
-<style scoped>
-.logo-image {
-  height: 30px;
-  width: 147px;
-}
-</style>
-
 <style>
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
-
-html, body {
-  font-family: 'Roboto', sans-serif;
-}
 #app {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
