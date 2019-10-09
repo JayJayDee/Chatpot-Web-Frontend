@@ -7,26 +7,26 @@
       <!-- <v-spacer></v-spacer> -->
     </v-app-bar>
 
-    <v-content></v-content>
+    <v-content>
+      <router-view />
+    </v-content>
 
-    <template>
-      <v-bottom-navigation v-model="bottomNav">
-        <v-btn value="recent">
-          <span>Recent</span>
-          <v-icon>mdi-history</v-icon>
-        </v-btn>
+    <v-bottom-navigation v-model="bottomNav" fixed>
+      <v-btn value="recent">
+        <span>Lounge</span>
+        <v-icon>mdi-tea</v-icon>
+      </v-btn>
 
-        <v-btn value="favorites">
-          <span>Favorites</span>
-          <v-icon>mdi-heart</v-icon>
-        </v-btn>
+      <v-btn value="favorites">
+        <span>Chats</span>
+        <v-icon>mdi-chat-processing</v-icon>
+      </v-btn>
 
-        <v-btn value="nearby">
-          <span>Nearby</span>
-          <v-icon>mdi-map-marker</v-icon>
-        </v-btn>
-      </v-bottom-navigation>
-    </template>
+      <v-btn value="nearby">
+        <span>Settings</span>
+        <v-icon>mdi-settings</v-icon>
+      </v-btn>
+    </v-bottom-navigation>
   </v-app>
 </template>
 
