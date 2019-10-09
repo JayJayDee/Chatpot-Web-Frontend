@@ -27,6 +27,10 @@
         <v-icon>mdi-settings</v-icon>
       </v-btn>
     </v-bottom-navigation>
+
+    <v-overlay>
+      <v-progress-circular indeterminate size="64"></v-progress-circular>
+    </v-overlay>
   </v-app>
 </template>
 
