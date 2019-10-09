@@ -1,13 +1,32 @@
 <template>
   <v-app>
     <v-app-bar app>
-      <v-toolbar-title>
-        Chatpot
+      <v-toolbar-title class="title-container">
+        <img src="@/assets/chatpot-logo-with-typo-medium.png" class="logo-image">
       </v-toolbar-title>
       <!-- <v-spacer></v-spacer> -->
     </v-app-bar>
 
     <v-content></v-content>
+
+    <template>
+      <v-bottom-navigation v-model="bottomNav">
+        <v-btn value="recent">
+          <span>Recent</span>
+          <v-icon>mdi-history</v-icon>
+        </v-btn>
+
+        <v-btn value="favorites">
+          <span>Favorites</span>
+          <v-icon>mdi-heart</v-icon>
+        </v-btn>
+
+        <v-btn value="nearby">
+          <span>Nearby</span>
+          <v-icon>mdi-map-marker</v-icon>
+        </v-btn>
+      </v-bottom-navigation>
+    </template>
   </v-app>
 </template>
 
@@ -18,6 +37,17 @@ export default Vue.extend({
   name: 'App'
 });
 </script>
+
+<style scoped>
+.logo-image {
+  height: 30px;
+  width: 147px;
+  margin-top: 5px;
+}
+.title-container {
+  vertical-align: middle;
+}
+</style>
 
 <style>
 #app {
