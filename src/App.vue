@@ -28,7 +28,7 @@
       </v-btn>
     </v-bottom-navigation>
 
-    <v-overlay>
+    <v-overlay v-if="true">
       <v-progress-circular indeterminate size="64"></v-progress-circular>
     </v-overlay>
   </v-app>
