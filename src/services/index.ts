@@ -1,7 +1,7 @@
-import * as auth from './auth-service';
+import * as credential from './credential-service';
 import * as api from './api-service';
 
 export {
-  auth,
+  credential,
   api
 };
